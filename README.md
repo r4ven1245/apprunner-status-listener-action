@@ -67,5 +67,6 @@ with:
     aws-region: ${{ env.AWS_REGION }}
     app-arn: ${{ env.APP_RUNNER_ARN }}
     desired-status: 'RUNNING'
+    sleep-time: 10000
     timeout: 600000
 ```
