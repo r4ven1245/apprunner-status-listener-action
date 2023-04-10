@@ -28,6 +28,10 @@ The account that is provided to the action needs the `apprunner:DescribeService`
 
 **Required** Desired AppRunner service status, validated against official documentation at https://docs.aws.amazon.com/apprunner/latest/api/API_Service.html.
 
+### `sleep-time`
+
+Sleep time between requests to the AWS API in ms. Default and minimum `5000`.
+
 ### `timeout`
 
 Timeout in ms. `0` means no timeout. Default `30000`.

@@ -21,10 +21,10 @@ try
     throw new Error(`ERROR - 'desired-status' input must be one of the following: '${allowedStatuses.join(`' , '`)}'`);
   }
 
+  const minSleepTime = 5000;
+  const sleepTime = Math.min(parseInt(core.getInput(`timeout`)), minSleepTime);
+
   const minTimeout = 0;
-
-  const sleepTime = 5000; //ms
-
   const timeout = Math.min(parseInt(core.getInput(`timeout`)), minTimeout);
 
   const client = new AppRunnerClient({

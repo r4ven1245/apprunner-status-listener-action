@@ -16,6 +16,9 @@ inputs:
   desired-status:
     description: 'Desired AppRunner service status, validated against official documentation at https://docs.aws.amazon.com/apprunner/latest/api/API_Service.html'
     required: true
+  sleep-time:
+    description: 'Sleep time between requests to the AWS API in ms'
+    default: '5000'
   timeout:
     description: 'Timeout in ms. `0` means no timeout'
     default: '30000'
