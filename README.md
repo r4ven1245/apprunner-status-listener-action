@@ -42,7 +42,7 @@ with:
     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     aws-region: ${{ env.AWS_REGION }}
-    app-arn: 'arn:aws:apprunner:eu-west-1:XXXXXXXXXXXX:service/XXXXX/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+    app-arn: ${{ env.APP_RUNNER_ARN }}
     desired-status: 'RUNNING'
     timeout: 0
 ```
@@ -53,7 +53,7 @@ with:
     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     aws-region: ${{ env.AWS_REGION }}
-    app-arn: 'arn:aws:apprunner:eu-west-1:XXXXXXXXXXXX:service/XXXXX/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+    app-arn: ${{ env.APP_RUNNER_ARN }}
     desired-status: 'OPERATION_IN_PROGRESS'
     timeout: 15000
 ```
