@@ -1,5 +1,5 @@
-﻿name: 'AppRunner Status Listener'
-description: "Wait for AppRunner's specific status"
+name: 'AppRunner Status Listener'
+description: 'Wait for AppRunner`s specific status'
 inputs:
   aws-access-key-id:
     description: 'AWS Authentication Data'
@@ -17,11 +17,11 @@ inputs:
     description: 'Desired AppRunner service status, validated against official documentation at https://docs.aws.amazon.com/apprunner/latest/api/API_Service.html'
     required: true
   timeout:
-    description: "Timeout in ms. `0` means no timeout"
+    description: 'Timeout in ms. `0` means no timeout'
     default: '30000'
 outputs:
   timed-out:
-    description: "`true` if the desired status wasn't received before the timeout occurred"
+    description: '`true` if the desired status wasn`t received before the timeout occurred'
 runs:
   using: 'node16'
   main: 'dist/index.js'
