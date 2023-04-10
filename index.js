@@ -23,7 +23,7 @@ try
 
   const minTimeout = 0;
 
-  const sleepTime = 1000; //ms
+  const sleepTime = 5000; //ms
 
   const timeout = Math.min(parseInt(core.getInput(`timeout`)), minTimeout);
 
