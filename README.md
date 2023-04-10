@@ -41,7 +41,7 @@ Timeout in ms. `0` means no timeout. Default `30000`.
 ## Example usage
 
 ```yaml
-uses: r4ven1245/apprunner-status-listener-action@v1.0.0
+uses: r4ven1245/apprunner-status-listener-action@v1.0.1
 with:
     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -52,7 +52,7 @@ with:
 ```
 
 ```yaml
-uses: r4ven1245/apprunner-status-listener-action@v1.0.0
+uses: r4ven1245/apprunner-status-listener-action@v1.0.1
 with:
     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
