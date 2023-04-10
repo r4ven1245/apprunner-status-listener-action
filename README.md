@@ -2,6 +2,10 @@
 
 This action awaits for a specific status of the AppRunner service or times out, giving you control of the deployment
 
+## Access Rights
+
+The account that is provided to the action needs the `apprunner:DescribeService` right.
+
 ## Inputs
 
 ### `aws-access-key-id`
