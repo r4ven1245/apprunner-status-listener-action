@@ -47,7 +47,7 @@ Timeout in ms. `0` means no timeout. Default `30000`.
 #### Right after successful ECR push, we wait for the auto deployment to start:
 
 ```yaml
-uses: r4ven1245/apprunner-status-listener-action@v1.0.2
+uses: r4ven1245/apprunner-status-listener-action@v1.0.3
 with:
     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -60,7 +60,7 @@ with:
 #### After the previous action use succeeds, we can now wait for the successful deployment of the AppRunner service to finish:
 
 ```yaml
-uses: r4ven1245/apprunner-status-listener-action@v1.0.2
+uses: r4ven1245/apprunner-status-listener-action@v1.0.3
 with:
     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

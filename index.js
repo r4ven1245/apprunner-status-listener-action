@@ -56,7 +56,7 @@ try
     }
     else
     {
-      console.log(`CONTINUE - Status is '${desiredStatus}'`);
+      console.log(`CONTINUE - Status is '${responseStatus}'`);
     }
 
     await new Promise(resolve => setTimeout(resolve, sleepTime));
