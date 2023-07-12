@@ -27,7 +27,7 @@ outputs:
     description: '`true` if the desired status wasn`t received before the timeout occurred'
 runs:
   using: 'node16'
-  main: 'dist/index.js'
+  main: 'index.js'
 branding:
   icon: 'check-circle'
   color: 'yellow'

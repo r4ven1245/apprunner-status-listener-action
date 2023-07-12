@@ -50,13 +50,13 @@ try
 
     if(responseStatus === desiredStatus)
     {
-      console.log(`SUCCESS - Status is desired '${desiredStatus}' :)`);
+      console.log(`SUCCESS - Status is desired '${desiredStatus}'`);
       success = true;
       break;
     }
     else
     {
-      console.log(`CONTINUE - Status is '${responseStatus}' :(`);
+      console.log(`CONTINUE - Status is '${responseStatus}'`);
     }
 
     await new Promise(resolve => setTimeout(resolve, sleepTime));
